@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a8d4db"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nl.spotify.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:text="Splitify"
+        android:textSize="32sp"
+        android:fontFamily=""
+        android:textColor="#b8008b"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bMainSplit"
+        android:text="Split a Playlist"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bMainLogout"
+        android:text="Logout"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
