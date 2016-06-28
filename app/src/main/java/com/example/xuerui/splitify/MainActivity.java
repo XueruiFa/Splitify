@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity
     private static final int REQUEST_CODE = 1337;
 
     private Button bMainLogout;
-    private Button bMainSplit;
+    private Button bMainMySplit;
+    private Button bMainYourSplit;
 
     private Player mPlayer;
 
@@ -39,10 +40,11 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bMainSplit = (Button) findViewById(R.id.bMainSplit);
+        bMainMySplit = (Button) findViewById(R.id.bMainMySplit);
+        bMainYourSplit = (Button) findViewById(R.id.bMainYourSplit);
         bMainLogout = (Button) findViewById(R.id.bMainLogout);
 
-        bMainSplit.setOnClickListener(this);
+        bMainMySplit.setOnClickListener(this);
         bMainLogout.setOnClickListener(this);
 
         AuthenticationRequest.Builder builder = new AuthenticationRequest.Builder(CLIENT_ID,
@@ -124,8 +126,11 @@ public class MainActivity extends AppCompatActivity
 
     public void onClick(View view) {
         switch(view.getId()) {
-            case R.id.bMainSplit:
+            case R.id.bMainMySplit:
                 startActivity(new Intent(this, Split.class));
+                break;
+            case R.id.bMainYourSplit:
+                startActivity(new Intent(this, OtherSplit.class));
                 break;
             case R.id.bMainLogout:
                 if (mPlayer != null) {

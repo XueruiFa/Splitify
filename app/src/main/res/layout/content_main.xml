@@ -19,10 +19,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/bMainSplit"
-        android:text="Split a Playlist"
+        android:id="@+id/bMainMySplit"
+        android:text="Find One of Your Playlists"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bMainYourSplit"
+        android:text="Find Another Users' Playlist"
         android:paddingBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
