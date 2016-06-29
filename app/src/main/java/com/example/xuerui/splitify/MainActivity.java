@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity
         bMainLogout = (Button) findViewById(R.id.bMainLogout);
 
         bMainMySplit.setOnClickListener(this);
+        bMainYourSplit.setOnClickListener(this);
         bMainLogout.setOnClickListener(this);
 
         AuthenticationRequest.Builder builder = new AuthenticationRequest.Builder(CLIENT_ID,
