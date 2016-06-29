@@ -56,7 +56,7 @@ public class Split extends AppCompatActivity implements View.OnClickListener {
         index = 0;
         api = new SpotifyApi();
         spotify = api.getService();
-        getPlaylists(index);
+        playlistsPager = spotify.getMyPlaylists();
         if (playlistsPager == null) {
             System.out.println("No playlists found error");
         }
